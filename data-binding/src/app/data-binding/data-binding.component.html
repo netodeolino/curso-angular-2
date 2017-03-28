@@ -92,3 +92,42 @@
     </div>
   </article>
 </section>
+
+
+<section class="two-way-binding">
+  <article>
+    <h3>Two-way data Binding</h3>
+    <div>
+
+      <!-- Forma 1 -->
+      <input type="text"
+      [value]="nome"
+      (input)="nome = $event.target.value"
+      >
+
+      <!-- Forma 2 -->
+      <input type="text"
+      [ngModel]="nome"
+      (ngModelChange)="nome = $event"
+      >
+
+      <!-- Forma 3 -->
+      <input type="text"
+      [(ngModel)]="nome"
+      >
+
+      <div>
+        Meu nome é {{ pessoa.nome }} e minha idade é {{ pessoa.idade }} anos.
+        <input type="text"
+        [(ngModel)]="pessoa.nome"
+        >
+        
+        <input type="text"
+        [(ngModel)]="pessoa.idade"
+        >
+      </div>
+
+      <p>Você digitou {{ nome }}</p>
+    </div>
+  </article>
+</section>
