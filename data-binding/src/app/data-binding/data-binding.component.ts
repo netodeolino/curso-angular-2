@@ -13,6 +13,8 @@ export class DataBindingComponent implements OnInit {
 
   conteudoAtual;
   //conteudoAtual : string = '';
+  conteudoSalvo : string = '';
+  isMouseOver = false;
 
   getValor () {
     return 45;
@@ -30,6 +32,14 @@ export class DataBindingComponent implements OnInit {
     console.log(event);
     this.conteudoAtual = event.target.value;
     //console.log(this.conteudoAtual);
+  }
+
+  onSave (valor : string) {
+    this.conteudoSalvo = valor;
+  }
+
+  onMouseSpan () {
+    this.isMouseOver = !this.isMouseOver;
   }
 
   constructor() { }
