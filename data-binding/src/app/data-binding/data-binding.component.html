@@ -59,3 +59,24 @@
 </article>
 
 </section>
+
+<section class="event-binding">
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button (click)="onClick()">Me clique!</button>
+
+      <br><br>
+
+      <input type="text"
+      (keyup)="onKeyUp($event)"
+      (keyup.enter)="onSave()"
+      (blur)="onSave()"
+      >
+
+      <br><br>
+
+      <div>Conteúdo Atual: {{ conteudoAtual }}</div>
+    </div>
+  </article>
+</section>
