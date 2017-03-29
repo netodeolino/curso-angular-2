@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { InputPropertyComponent } from './input-property.component';
 
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
   styleUrls: ['./data-binding.component.css']
 })
-export class DataBindingComponent implements OnInit {
+export class DataBindingComponent {
 
   url:string = 'https://netodeolino.github.io/';
   cursoAngular:boolean = true;
@@ -45,8 +46,5 @@ export class DataBindingComponent implements OnInit {
   }
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }
