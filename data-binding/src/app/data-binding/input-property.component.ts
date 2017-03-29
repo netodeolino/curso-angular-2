@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'curso',
@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
 })
 export class InputPropertyComponent {
 
-    nomeCurso : string = '';
+    /* Forma de expor só 'nome' */
+    @Input('nome') nomeCurso : string = '';
 
     constructor () { }
 

@@ -13,7 +13,7 @@ export class DataBindingComponent {
   urlImagem = 'http://lorempixel.com/output/technics-q-c-640-480-7.jpg';
 
   conteudoAtual;
-  //conteudoAtual : string = '';
+  //conteudoAtual : string = ''; /* Outro modo de fazer */
   conteudoSalvo : string = '';
   isMouseOver = false;
   nome: string = '';
